@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode:'production',
     entry:{
-        light:'./lib/index.tsx'
+        light:'./lib/index.d.tsx'
     },
     output: {
         path: path.resolve(__dirname,'dist/lib'),
