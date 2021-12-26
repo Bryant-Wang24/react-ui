@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Bryant-Wang24/react-ui#readme",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
-    "webpack": "4.29.6",
-    "webpack-cli": "3.2.3"
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
   }
 }
