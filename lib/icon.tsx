@@ -1,9 +1,5 @@
 import React from 'react';
-import wechat from './icons/wechat.svg'
-import pay from './icons/pay.svg'
-import douyin from './icons/douyin.svg'
-
-console.log(wechat,pay,douyin);
+import './importIcons'
 
 interface IconProps{
   name:string
