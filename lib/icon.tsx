@@ -10,15 +10,6 @@ const Icon:React.FC<IconProps> = (props)=>{
       <svg>
         <use xlinkHref={`#${props.name}`}/>
       </svg>
-      <svg>
-        <use xlinkHref="#wechat"/>
-      </svg>
-      <svg>
-        <use xlinkHref="#pay"/>
-      </svg>
-      <svg>
-        <use xlinkHref="#douyin"/>
-      </svg>
     </span>
   )
 }
