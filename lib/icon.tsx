@@ -7,12 +7,11 @@ interface IconProps extends React.SVGAttributes<SVGElement>{
     name:string,
     // onClick:React.MouseEventHandler<SVGElement>
 }
-const Icon:React.FC<IconProps> = (props)=>{
-    console.log('props',props)
-    const {className,...restProps} = props//...restProps在这里 表示除了className,剩余的所有属性
+const Icon:React.FC<IconProps> = ({className,name,...restProps})=>{
+    //...restProps在这里 表示除了className和name属性,剩余的所有属性
   return(
       <svg className={classes('fui-icon', className)} {...restProps}>
-        <use xlinkHref={`#${props.name}`}/>
+        <use xlinkHref={`#${name}`}/>
       </svg>
   )
 }
