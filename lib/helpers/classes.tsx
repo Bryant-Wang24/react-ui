@@ -1,4 +1,4 @@
 const classes = (...names:(string|undefined)[])=>{
-    return names.join(',').replace(/,/g," ")
+    return names.filter(Boolean).join(' ')
 }
 export default classes
