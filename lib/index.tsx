@@ -7,5 +7,10 @@ const fn:React.MouseEventHandler =(e)=>{
 }
 
 ReactDOM.render(<div>
-  <Icon name="wechat" onClick={fn} />
+  <Icon name="wechat" className='wqs wang'
+        onClick={fn}
+        onMouseEnter={() => console.log('enter')}
+        onMouseLeave={() => console.log('leave')}
+        onTouchStart={() => console.log('touch')}
+  />
 </div>,document.querySelector('#root'))
