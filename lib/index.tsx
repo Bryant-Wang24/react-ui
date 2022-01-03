@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Icon from './icon/icon';
-
+import './index.scss'
+export {default as Icon} from './icon/icon';
 const fn:React.MouseEventHandler =(e)=>{
   console.log(e.target)
 }
