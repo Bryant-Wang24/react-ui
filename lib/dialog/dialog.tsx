@@ -3,19 +3,23 @@ import './dialog.scss'
 import React, { Fragment } from 'react';
 import {Icon} from '../index';
 interface Props{
-  visible:Boolean
+  visible:Boolean,
+  onClose:React.MouseEventHandler
 }
 
 const scopedClass = scopedClassMaker('fui-dialog');
 const sc = scopedClass;
 const Dialog:React.FC<Props> = (props)=>{
+  const onClickClose:React.MouseEventHandler = (e)=>{
+    props.onClose(e)
+  }
   return(
     props.visible?
       <Fragment>
         <div className={sc('mask')} >
         </div>
         <div className={sc()}>
-          <div className={sc('close')} >
+          <div className={sc('close')} onClick={onClickClose} >
             <Icon name="close"/>
           </div>
           <header className={sc('header')}>
@@ -25,8 +29,8 @@ const Dialog:React.FC<Props> = (props)=>{
             {props.children}
           </main>
           <footer className={sc('footer')}>
-            <button>ok</button>
-            <button>cancel</button>
+            <button onClick={onClickClose}>ok</button>
+            <button onClick={onClickClose}>cancel</button>
           </footer>
         </div>
       </Fragment>
