@@ -1,10 +1,11 @@
 import { scopedClassMaker } from '../classes';
 import './dialog.scss'
-import React, { Fragment } from 'react';
+import React, {Fragment, ReactElement} from 'react';
 import {Icon} from '../index';
 interface Props{
   visible:Boolean,
-  onClose:React.MouseEventHandler
+  onClose:React.MouseEventHandler,
+  buttons:Array<ReactElement>
 }
 
 const scopedClass = scopedClassMaker('fui-dialog');
@@ -29,8 +30,9 @@ const Dialog:React.FC<Props> = (props)=>{
             {props.children}
           </main>
           <footer className={sc('footer')}>
-            <button onClick={onClickClose}>ok</button>
-            <button onClick={onClickClose}>cancel</button>
+            {props.buttons}
+            {/*<button onClick={onClickClose}>ok</button>*/}
+            {/*<button onClick={onClickClose}>cancel</button>*/}
           </footer>
         </div>
       </Fragment>
