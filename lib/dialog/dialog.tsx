@@ -17,7 +17,7 @@ const Dialog:React.FC<Props> = (props)=>{
   return(
     props.visible?
       <Fragment>
-        <div className={sc('mask')} >
+        <div className={sc('mask')} onClick={onClickClose} >
         </div>
         <div className={sc()}>
           <div className={sc('close')} onClick={onClickClose} >
