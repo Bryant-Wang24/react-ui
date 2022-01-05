@@ -30,9 +30,9 @@ const Dialog:React.FC<Props> = (props)=>{
             {props.children}
           </main>
           <footer className={sc('footer')}>
-            {props.buttons}
-            {/*<button onClick={onClickClose}>ok</button>*/}
-            {/*<button onClick={onClickClose}>cancel</button>*/}
+            {props.buttons && props.buttons.map((button, index) =>
+              React.cloneElement(button, {key: index})
+            )}
           </footer>
         </div>
       </Fragment>
