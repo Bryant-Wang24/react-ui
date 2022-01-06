@@ -12,6 +12,7 @@ interface Props{
 
 const scopedClass = scopedClassMaker('fui-dialog');
 const sc = scopedClass;
+
 const Dialog:React.FC<Props> = (props)=>{
   const onClickClose:React.MouseEventHandler = (e)=>{
     props.onClose(e)
@@ -48,4 +49,18 @@ const Dialog:React.FC<Props> = (props)=>{
     ReactDOM.createPortal(x, document.body)
   );
 }
+Dialog.defaultProps = {
+  closeOnClickMask:false
+}
+const alert = (content:string)=>{
+  const component = <Dialog visible={true} onClose={()=>{
+    ReactDOM.render(React.cloneElement(component,{visible:false}),div)
+    ReactDOM.unmountComponentAtNode(div)
+  }}>{content}</Dialog>
+  const div = document.createElement('div')
+  document.body.append(div)
+  ReactDOM.render(component,div)
+}
+export {alert}
+
 export default Dialog
