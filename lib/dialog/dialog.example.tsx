@@ -6,7 +6,7 @@ const DialogExample:React.FC = ()=>{
   const [y,setY] = useState(false)
   return(
     <div>
-      <div>
+      <div style={{position: 'relative', zIndex: 10, border: '1px solid red', color: 'red'}}>
         <h1>example 1</h1>
         <button onClick={()=>{setX(!x)}}>click</button>
         <Dialog visible={x} closeOnClickMask={false} onClose={()=>{setX(false)}} buttons={
@@ -19,7 +19,7 @@ const DialogExample:React.FC = ()=>{
         </Dialog>
       </div>
 
-      <div>
+      <div style={{position: 'relative', zIndex: 9}}>
         <h1>example 2</h1>
         <button onClick={()=>{setY(!y)}}>click</button>
         <Dialog visible={y} closeOnClickMask={true} onClose={()=>{setY(false)}} buttons={
@@ -28,7 +28,7 @@ const DialogExample:React.FC = ()=>{
             <button onClick={()=>{setY(false)}}>cancel</button>
           ]
         }>
-          <strong>hi</strong>
+          <strong>hi22</strong>
         </Dialog>
       </div>
     </div>
