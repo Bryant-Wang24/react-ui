@@ -1,11 +1,19 @@
-import React from 'react'
+import React, {CSSProperties} from 'react'
 import {scopedClassMaker} from "../classes";
+import './layout.scss'
 
 const  sc = scopedClassMaker('gu-layout')
 
-const Layout: React.FC = (props) => {
+interface Props{
+    style:CSSProperties,
+    className:string
+}
+const Layout: React.FC<Props> = (props) => {
+    console.log('props',props)
+    const {className,...rest} = props
+    console.log('...rest',rest)
     return (
-        <div className={sc()}>
+        <div className={[sc(),className].join(' ')} {...rest}>
             {props.children}
         </div>
     )

@@ -5,7 +5,7 @@ const sc = scopedClassMaker('gu-layout')
 
 const Header: React.FC = () => {
     return (
-        <div className={sc()}>Header</div>
+        <div className={sc('header')}>Header</div>
     )
 }
 export default Header;
