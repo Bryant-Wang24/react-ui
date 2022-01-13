@@ -1,10 +1,12 @@
 import React from 'react'
 import {scopedClassMaker} from "../classes";
 
+interface Props extends React.HTMLAttributes<HTMLElement>{}
 const sc = scopedClassMaker('gu-layout')
-const Footer: React.FC = () => {
+const Footer: React.FC<Props> = (props) => {
+    const {className,...rest} = props
     return (
-        <div className={sc('footer')}>Footer</div>
+        <div className={sc('footer',{extra:className})} {...rest}>Footer</div>
     )
 }
 export default Footer;
