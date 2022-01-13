@@ -1,4 +1,27 @@
 @import "../helper";
+section{
+  margin-top: 100px;
+}
+section:first-child{
+  margin-top: 0;
+}
 .gu-layout{
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  &.hasAside{
+    flex-direction: row;
+    .gu-layout{
+      flex-direction: column;
+    }
+  }
+  &-content{
+    flex: 1;
+    border: 1px solid green;
+  }
+  & & {
+    flex: 1;
+    background: #108ee9;
+    flex-direction: row;
+  }
 }
