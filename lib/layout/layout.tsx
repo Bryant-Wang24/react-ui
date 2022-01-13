@@ -13,7 +13,7 @@ const Layout: React.FC<Props> = (props) => {
     const {className,...rest} = props
     console.log('...rest',rest)
     return (
-        <div className={[sc(),className].join(' ')} {...rest}>
+        <div className={[sc('',{extra:className})].join(' ')} {...rest}>
             {props.children}
         </div>
     )
