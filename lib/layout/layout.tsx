@@ -11,11 +11,11 @@ interface Props extends React.HTMLAttributes<HTMLElement>{
 const Layout: React.FC<Props> = (props) => {
     const {className,...rest} = props
     const children = props.children as Array<ReactElement>
-    const hasAside = children.length && children.some((item)=>{
+    const hasAside ='length' in children && children.some((item)=>{
         return item.type===Aside
     })
     return (
-        <div className={sc('',{extra:[className,hasAside&&'hasAside'].join(' ')})} {...rest}>
+        <div className={sc({'':true,hasAside},{extra:[className,hasAside&&'hasAside'].join(' ')})} {...rest}>
             {props.children}
         </div>
     )
