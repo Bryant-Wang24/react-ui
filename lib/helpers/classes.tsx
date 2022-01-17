@@ -16,7 +16,7 @@ function scopedClassMaker(prefix: string) {
         //name = {hasAside:true,active:false,x:true,y:false}
         let name2;
         let result
-        if (typeof name2==='string'||name ===undefined){
+        if (typeof name==='string'||name ===undefined){
             name2 = name
             result = [prefix,name2].filter(Boolean).join('-') //如果传进来字符串 'header'，直接合并就变成 gu-layout-header
         }else{
