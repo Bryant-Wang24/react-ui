@@ -1,8 +1,8 @@
-import { scopedClassMaker } from '../classes';
 import './dialog.scss'
 import React, {Fragment, ReactElement, ReactNode} from 'react';
 import {Icon} from '../index';
 import ReactDOM from 'react-dom';
+import {scopedClassMaker} from "../helpers/classes";
 interface Props{
   visible:Boolean,
   onClose:React.MouseEventHandler,
