@@ -1,4 +1,4 @@
-import {scopedClassMaker} from "../classes";
+import classes, {scopedClassMaker} from "../classes";
 
 describe('classes', () => {
   it('接受 1 个 className', () => {
