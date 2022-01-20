@@ -23,7 +23,7 @@ const DialogExample:React.FC = ()=>{
         <h1>example 2</h1>
         <button onClick={()=>{setY(!y)}}>click</button>
         <Dialog visible={y} closeOnClickMask={true} onClose={()=>{setY(false)}} buttons={
-          [
+          [ 
             <button onClick={()=>{setY(false)}}>ok</button>,
             <button onClick={()=>{setY(false)}}>cancel</button>
           ]
