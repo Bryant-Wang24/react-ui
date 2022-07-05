@@ -8,7 +8,7 @@ const sc = scopedClassMaker('gu-layout')
 const Content: React.FC<Props> = (props) => {
     const {className,...rest} = props
     return (
-        <div className={sc('content',{extra:className})} {...rest}>Content</div>
+        <div className={sc('content',{extra:className})} {...rest}>{props.children}</div>
     )
 }
 export default Content;

@@ -1,0 +1,36 @@
+.docHeader{
+  padding: 16px;
+  background: #ffffff;
+}
+
+.docAside{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  background: #ffffff;
+  h2{
+    padding:0 16px ;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      width: 100%;
+      list-style: none;
+      :hover{
+        background: linear-gradient(90deg, #18E5C9 0%, #21E572 100%);
+        color: #ffffff;
+      }
+      a{
+        padding:10px 16px ;
+        display: block;
+        color: #222222;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.docContent{
+  padding: 16px;
+}
