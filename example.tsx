@@ -11,13 +11,15 @@ import Layout from "./lib/layout/layout";
 import Header from "./lib/layout/header";
 import Aside from "./lib/layout/aside";
 import Content from "./lib/layout/content";
+import Icon from "./lib/icon/icon";
 
 ReactDOM.render(
   <Router>
-    <Layout className='docLayout' style={{height:'100vh'}}>
+    <Layout className='docLayout' style={{minHeight:'100vh'}}>
       <Header className='docHeader'>
         <div className="logo">
-          FUI
+          <Icon className='qingteng' name='qingteng'/>
+          <span>QT-UI</span>
           {/*<img src={icon}  alt=''/>*/}
 
         </div>

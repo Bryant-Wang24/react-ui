@@ -1,15 +1,36 @@
+
+.docLayout{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .docHeader{
   padding: 16px;
-  background: #ffffff;
+  box-shadow: 0 10px 30px 0 rgba(36, 179, 95, 0.1);
+  //background: #B2F3CD;
+  .logo{
+    display: flex;
+    align-items: center;
+    span{
+      font-size: 22px;
+      color: #0ABC54;
+    }
+    .qingteng{
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 .docAside{
   display: flex;
   flex-direction: column;
   width: 150px;
-  background: #ffffff;
+  background: #B2F3CD;
+  box-shadow: 0 10px 30px 0 rgba(36, 179, 95, 0.1);
   h2{
-    padding:0 16px ;
+    padding:0 16px;
+    font-size: 22px;
   }
   ul{
     margin: 0;
@@ -18,8 +39,8 @@
       width: 100%;
       list-style: none;
       :hover{
-        background: linear-gradient(90deg, #18E5C9 0%, #21E572 100%);
-        color: #ffffff;
+        background: #ffffff;
+        color: #0ABC54;
       }
       a{
         padding:10px 16px ;

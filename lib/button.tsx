@@ -1,10 +1,15 @@
 import React from "react"
-
-function Button() {
+import classes from "./helpers/classes";
+import './button.scss'
+interface ButtonProps{
+    type?:string,
+}
+const Button:React.FC<ButtonProps> = (props) =>{
+    const {type } = props
   return (
-    <div>
-      按钮
-    </div>
+    <span className={classes('fui-button', `gulu-button-theme-${type}`) }>
+        {props.children}
+    </span>
   )
 }
 

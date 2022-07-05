@@ -6,12 +6,10 @@ section:first-child{
   margin-top: 0;
 }
 .gu-layout{
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   &-content{
     flex: 1;
-    border: 1px solid green;
   }
   & & {
     flex: 1;
@@ -19,7 +17,6 @@ section:first-child{
   }
   &-hasAside{
     flex-direction: row;
-    border: 1px solid red;
     .gu-layout{
       flex-direction: column;
     }

@@ -1,0 +1,30 @@
+//$color:''
+.buttonExample{
+  //border: 1px solid red;
+  section{
+    margin: 0;
+    h2{
+      font-weight: normal;
+    }
+  }
+}
+
+.fui-button{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  color: grey;
+  //background: linear-gradient(90deg, #0FD2B7 0%, #25CF6B 100%);
+  //color: #FFFFFF;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid #0ABC54;
+    color: #0ABC54;
+
+  }
+}
+
