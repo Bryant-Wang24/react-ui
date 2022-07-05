@@ -1,14 +1,16 @@
-
+* {margin: 0;padding: 0; box-sizing: border-box;}
+*::before {box-sizing: border-box;}
+*::after {box-sizing: border-box;}
+ul, ol {list-style: none;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+a { text-decoration: none; color: inherit; }
 .docLayout{
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 .docHeader{
   padding: 16px;
   margin-bottom: 20px;
   box-shadow: 0 10px 30px 0 rgba(36, 179, 95, 0.1);
-  //background: #B2F3CD;
   .logo{
     display: flex;
     align-items: center;
@@ -30,21 +32,16 @@
   background: #B2F3CD;
   box-shadow: 0 10px 30px 0 rgba(36, 179, 95, 0.1);
   h2{
-    padding:0 16px;
+    padding:10px 16px;
     font-size: 22px;
   }
   ul{
-    margin: 0;
-    padding: 0;
     li{
       width: 100%;
-      list-style: none;
-
       a{
         padding:10px 16px ;
         display: block;
         color: #222222;
-        text-decoration: none;
       }
       :hover{
         background: #ffffff;
@@ -60,4 +57,11 @@
 
 .docContent{
   padding: 16px;
+}
+.docFooter {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 16px 0;
+  border-top: 1px solid #eee;
 }

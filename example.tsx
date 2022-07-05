@@ -7,10 +7,7 @@ import IconExample from './lib/icon/icon.example';
 import ButtonExample from './lib/button.example';
 import DialogExample from './lib/dialog/dialog.example';
 import LayoutExample from './lib/layout/layout.example'
-import Layout from "./lib/layout/layout";
-import Header from "./lib/layout/header";
-import Aside from "./lib/layout/aside";
-import Content from "./lib/layout/content";
+import {Layout, Aside, Header, Content, Footer} from './lib/layout/layout';
 import Icon from "./lib/icon/icon";
 
 ReactDOM.render(
@@ -20,8 +17,6 @@ ReactDOM.render(
         <div className="logo">
           <Icon className='qingteng' name='qingteng'/>
           <span>QT-UI</span>
-          {/*<img src={icon}  alt=''/>*/}
-
         </div>
       </Header>
       <Layout>
@@ -49,6 +44,9 @@ ReactDOM.render(
           <Route path="/layout" component={LayoutExample}/>
         </Content>
       </Layout>
+      <Footer className="docFooter">
+        &copy; 王秋爽
+      </Footer>
     </Layout>
   </Router>
   , document.querySelector('#root'));

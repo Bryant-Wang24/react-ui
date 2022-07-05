@@ -7,8 +7,11 @@ const ButtonExample: React.FunctionComponent = () => {
       <h1>Button示例</h1>
       <section>
         <h2>常规使用</h2>
-        <Button type='default'>123</Button>
-        <Button type='primary'>按钮</Button>
+          <main className='normal'>
+              <Button type='default'>123</Button>
+              <Button type='primary'>按钮</Button>
+          </main>
+
       </section>
 
     </div>
