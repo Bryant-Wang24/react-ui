@@ -4,53 +4,160 @@
     margin-bottom: 20px;
   }
   section{
-    margin: 0;
+    border: 1px dashed black;
+    margin: 20px 0;
     h2{
       font-weight: normal;
-      margin: 10px 0;
+      margin-bottom: 20px;
     }
-    .normal{
+    .default-main{
       display: flex;
-
-      span{
+      button{
         margin: 0 5px;
-        &:first-child {
-          margin-left: 0;
-        }
-        &:last-child {
-          margin-right: 0;
+      }
+    }
+    .size-main,.main{
+      display: flex;
+      flex-direction: column;
+      .size-content,.content{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        button{
+          margin: 0 5px;
+          //&:first-child {
+          //  margin-left: 0;
+          //}
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
+
   }
 }
 
 .fui-button{
-  border: 1px solid grey;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 40px;
+  padding:0 12px;
+  height: 32px;
   border-radius: 4px;
-  color: grey;
-  //background: linear-gradient(90deg, #0FD2B7 0%, #25CF6B 100%);
-  //color: #FFFFFF;
+  font-size: 16px;
+  background: white;
+  color: black;
   cursor: pointer;
-  &:hover{
+  &:hover,
+  &:focus{
     transition: all 0.5s;
     border: 1px solid #0ABC54;
     color: #0ABC54;
   }
+  //&.gulu-button-level-danger{
+  //  border: 1px solid red;
+  //  color: #222222;
+  //}
 }
-.gulu-button-theme-primary{
+.gulu-button-theme-link{
+  color: #0ABC54;
+  border: none;
+  &:hover,
+  &:focus{
+    transition: all 0.5s;
+    color: rgba(#0ABC54,0.6);
+    border: none;
+  }
+}
+
+.gulu-button-theme-text{
+  border: none;
+  &:hover,
+  &:focus{
+    background: darken(white, 5%);
+    transition: all 0.5s;
+    color: black;
+    border: none;
+  }
+}
+
+.gulu-button-size-small{
+  font-size: 12px;
+  height: 20px;
+  padding: 0 4px;
+}
+.gulu-button-size-big{
+  font-size: 24px;
+  height: 48px;
+  padding: 0 16px;
+}
+
+
+.gulu-button-theme-link{
+  &.gulu-button-level-danger{
+    color: red;
+    background: transparent;
+    &:hover,
+    &:focus{
+      color: rgba(red, 0.6);
+      background: transparent;
+    }
+  }
+  &.gulu-button-level-main{
+    color: #0ABC54;
+    background: transparent;
+    &:hover,
+    &:focus{
+      color: rgba(#0ABC54,0.6);
+      background: transparent;
+    }
+  }
+}
+
+.gulu-button-theme-text{
+  &.gulu-button-level-danger{
+    color: red;
+    background: transparent;
+    &:hover,
+    &:focus{
+      color: rgba(red, 0.8);
+      background: darken(white, 5%);
+    }
+  }
+  &.gulu-button-level-main{
+    background: transparent;
+    color: #0ABC54;
+    &:hover,
+    &:focus{
+      color: #0ABC54;
+      background: darken(white, 5%);
+    }
+  }
+}
+
+.gulu-button-level-main{
   background: #0ABC54;
   color: #FFFFFF;
   border: none;
-  &:hover{
+  &:hover,
+  &:focus{
     background: rgba(#0ABC54,0.7);
     transition: all 0.5s;
     border: none;
     color: #FFFFFF;
+  }
+}
+.gulu-button-level-danger{
+  background: red;
+  color: #FFFFFF;
+  border: none;
+  &:hover,
+  &:focus{
+    background: rgba(red, 0.6);
+    transition: all 0.5s;
+    color: #FFFFFF;
+    border: none;
   }
 }
