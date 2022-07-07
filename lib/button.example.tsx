@@ -55,6 +55,23 @@ const ButtonExample: React.FunctionComponent = () => {
                 </div>
             </main>
         </section>
+
+        <section>
+            <h2>支持disabled</h2>
+            <main className='default-main'>
+                <Button disabled={true}>常规按钮</Button>
+                <Button disabled={true} theme='link'>链接按钮</Button>
+                <Button disabled={true} theme='text'>文本按钮</Button>
+            </main>
+        </section>
+
+        <section>
+            <h2>支持loading</h2>
+            <main className='default-main'>
+                <Button loading={true}>加载中</Button>
+                <Button>加载完毕</Button>
+            </main>
+        </section>
     </div>
   );
 };

@@ -56,32 +56,17 @@
     border: 1px solid #0ABC54;
     color: #0ABC54;
   }
-  //&.gulu-button-level-danger{
-  //  border: 1px solid red;
-  //  color: #222222;
-  //}
-}
-.gulu-button-theme-link{
-  color: #0ABC54;
-  border: none;
-  &:hover,
-  &:focus{
-    transition: all 0.5s;
-    color: rgba(#0ABC54,0.6);
-    border: none;
+  &.gulu-button-disabled-true{
+    cursor: not-allowed;
+    &:hover,
+    &:focus{
+      cursor: not-allowed;
+      border: 1px solid grey;
+      color: grey;
+    }
   }
 }
 
-.gulu-button-theme-text{
-  border: none;
-  &:hover,
-  &:focus{
-    background: darken(white, 5%);
-    transition: all 0.5s;
-    color: black;
-    border: none;
-  }
-}
 
 .gulu-button-size-small{
   font-size: 12px;
@@ -96,6 +81,14 @@
 
 
 .gulu-button-theme-link{
+  color: #0ABC54;
+  border: none;
+  &:hover,
+  &:focus{
+    transition: all 0.5s;
+    color: rgba(#0ABC54,0.6);
+    border: none;
+  }
   &.gulu-button-level-danger{
     color: red;
     background: transparent;
@@ -114,9 +107,26 @@
       background: transparent;
     }
   }
+  &.gulu-button-disabled-true{
+    cursor: not-allowed;
+    &:hover,
+    &:focus{
+      cursor: not-allowed;
+      color: grey;
+      border: none;
+    }
+  }
 }
 
 .gulu-button-theme-text{
+  border: none;
+  &:hover,
+  &:focus{
+    background: darken(white, 5%);
+    transition: all 0.5s;
+    color: black;
+    border: none;
+  }
   &.gulu-button-level-danger{
     color: red;
     background: transparent;
@@ -133,6 +143,15 @@
     &:focus{
       color: #0ABC54;
       background: darken(white, 5%);
+    }
+  }
+  &.gulu-button-disabled-true{
+    cursor: not-allowed;
+    &:hover,
+    &:focus{
+      cursor: not-allowed;
+      color: grey;
+      border: none;
     }
   }
 }
@@ -159,5 +178,25 @@
     transition: all 0.5s;
     color: #FFFFFF;
     border: none;
+  }
+}
+
+.gulu-loadingIndicator {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 4px;
+  border-color: #0ABC54 #0ABC54 #0ABC54 transparent;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  animation: gulu-spin 1s infinite linear;
+}
+@keyframes gulu-spin {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
