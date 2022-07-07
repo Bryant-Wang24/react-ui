@@ -1,4 +1,8 @@
 @import "../helper";
+.section{
+  margin: 20px 0;
+  border: 1px dashed  #0ABC54;
+}
 .fui-dialog {
   position: fixed; background: white; min-width: 20em;
   z-index: 2;
