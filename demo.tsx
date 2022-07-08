@@ -31,7 +31,7 @@ const Demo: React.FunctionComponent<Props> = (props) => {
                 {props.children}
             </div>
             <div>
-                <Button style={{marginBottom: '20px'}} onClick={() => setCodeVisible(!codeVisible)}>查看代码</Button>
+                <Button onClick={() => setCodeVisible(!codeVisible)}>查看代码</Button>
                 {codeVisible && code}
             </div>
         </div>
