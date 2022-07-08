@@ -3,6 +3,7 @@ import Highlight, {defaultProps} from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/github";
 import {useState} from 'react';
 import Button from "./lib/button";
+import "./demo.scss"
 
 interface Props {
     code: string;
@@ -26,11 +27,14 @@ const Demo: React.FunctionComponent<Props> = (props) => {
         </Highlight>
     );
     return (
-        <div>
+        <div className='type-section'>
             <div className="example">
                 {props.children}
             </div>
-            <div>
+            <div className='explain'>
+                按钮有三种类型：常规按钮、链接按钮、文本按钮。
+            </div>
+            <div className='code'>
                 <Button onClick={() => setCodeVisible(!codeVisible)}>查看代码</Button>
                 {codeVisible && code}
             </div>

@@ -1,0 +1,14 @@
+.type-section{
+  margin: 15px;
+  border: 1px solid rgba(0,0,0,.06);
+  .example{
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+  .explain{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+  .code{
+    padding: 15px;
+  }
+}

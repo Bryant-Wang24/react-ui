@@ -4,16 +4,15 @@
     margin-bottom: 20px;
   }
   section{
-    border: 1px dashed black;
-    //margin: 20px 0;
     h2{
       font-weight: normal;
       margin-bottom: 20px;
+      margin-left: 10px;
     }
     .default-main{
       display: flex;
       button{
-        margin: 0 5px;
+        margin: 0 15px;
       }
     }
     .size-main,.main{
@@ -24,7 +23,7 @@
         display: flex;
         align-items: center;
         button{
-          margin: 0 5px;
+          margin: 0 15px;
           //&:first-child {
           //  margin-left: 0;
           //}
@@ -39,7 +38,9 @@
 }
 
 .fui-button{
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
+  //margin-top: 20px;
+  margin: 15px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
