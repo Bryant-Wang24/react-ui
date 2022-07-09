@@ -18,7 +18,8 @@ const ButtonDemo = () => {
                         <ButtonExample1/>
                     </main>
                     <div className='explain'>
-                        按钮有三种类型：常规按钮、链接按钮、文本按钮。
+                        按钮有常规、链接、文本三种按钮。
+                        通过设置<span> theme </span>为<span>link</span><span>text</span> 分别把按钮设置为 链接按钮 和 文本按钮。若不设置<span>theme</span> ，则为常规按钮。
                     </div>
                 </section>
             </Demo>
@@ -28,14 +29,22 @@ const ButtonDemo = () => {
                     <main className='size-main'>
                         <ButtonExample2/>
                     </main>
+                    <div className='explain'>
+                        按钮有大、中、小三种尺寸。
+                        通过设置<span> size </span>为<span>large</span> <span>small</span>  分别把按钮设为大、小尺寸。若不设置<span>size</span> ，则尺寸为中。
+                    </div>
                 </section>
             </Demo>
             <Demo code={require('!!raw-loader!./button.example3').default}>
                 <section>
-                    <h2>支持level</h2>
+                    <h2>支持 level</h2>
                     <main className='main'>
                         <ButtonExample3/>
                     </main>
+                    <div className='explain'>
+                        按钮有主要、普通、危险三种按钮。
+                        通过设置<span>level</span>  为<span>main</span> <span>danger</span>  分别把按钮设为主要按钮、危险按钮。若不设置<span>level</span> ，则默认为普通按钮。
+                    </div>
                 </section>
             </Demo>
             <Demo code={require('!!raw-loader!./button.example4').default}>
@@ -44,6 +53,9 @@ const ButtonDemo = () => {
                     <main className='default-main'>
                         <ButtonExample4/>
                     </main>
+                    <div className='explain'>
+                        添加<span>disabled</span>  属性 为<span>true</span>  即可让按钮处于不可用状态，同时按钮样式也会改变。
+                    </div>
                 </section>
             </Demo>
             <Demo code={require('!!raw-loader!./button.example5').default}>
@@ -52,6 +64,9 @@ const ButtonDemo = () => {
                     <main className='default-main'>
                         <ButtonExample5/>
                     </main>
+                    <div className='explain'>
+                        添加<span>loading</span>  属性为<span>true</span>  即可让按钮处于加载状态，最后两个按钮演示点击后进入加载状态。
+                    </div>
                 </section>
             </Demo>
         </div>
