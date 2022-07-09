@@ -17,6 +17,9 @@ const ButtonDemo = () => {
                     <main className='default-main'>
                         <ButtonExample1/>
                     </main>
+                    <div className='explain'>
+                        按钮有三种类型：常规按钮、链接按钮、文本按钮。
+                    </div>
                 </section>
             </Demo>
             <Demo code={require('!!raw-loader!./button.example2').default}>

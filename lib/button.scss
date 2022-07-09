@@ -12,14 +12,14 @@
     .default-main{
       display: flex;
       button{
-        margin: 0 15px;
+        margin: 0 15px 15px;
       }
     }
     .size-main,.main{
       display: flex;
       flex-direction: column;
       .size-content,.content{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         display: flex;
         align-items: center;
         button{

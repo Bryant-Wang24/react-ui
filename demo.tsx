@@ -31,11 +31,8 @@ const Demo: React.FunctionComponent<Props> = (props) => {
             <div className="example">
                 {props.children}
             </div>
-            <div className='explain'>
-                按钮有三种类型：常规按钮、链接按钮、文本按钮。
-            </div>
-            <div className='code'>
                 <Button onClick={() => setCodeVisible(!codeVisible)}>查看代码</Button>
+            <div className='code'>
                 {codeVisible && code}
             </div>
         </div>
