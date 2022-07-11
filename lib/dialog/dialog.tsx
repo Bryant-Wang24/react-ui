@@ -3,6 +3,7 @@ import React, {Fragment, ReactElement, ReactNode} from 'react';
 import {Icon} from '../index';
 import ReactDOM from 'react-dom';
 import {scopedClassMaker} from "../helpers/classes";
+import Button from "../button/button";
 interface Props{
   visible:Boolean,
   onClose:React.MouseEventHandler,
@@ -68,7 +69,7 @@ const modal = (content:ReactNode,buttons?:Array<ReactElement>,afterClose?: () =>
 }
 
 const alert = (content:string)=>{
- const button = <button onClick={()=>close()}>OK</button>
+ const button = <Button level='main' onClick={()=>close()}>确认</Button>
   const close = modal(content,[button])
 }
 const confirm = (content:string,yes?:()=>void,no?:()=>void)=>{
@@ -82,8 +83,8 @@ const confirm = (content:string,yes?:()=>void,no?:()=>void)=>{
     no&&no()
   }
   const buttons =[
-    <button onClick={onYes}>yes</button>,
-    <button onClick={onNo}>no</button>
+    <Button level='main' onClick={onYes}>确认</Button>,
+    <Button onClick={onNo}>取消</Button>
   ]
   const close = modal(content,buttons,no)
 }
