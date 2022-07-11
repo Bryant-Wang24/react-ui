@@ -1,6 +1,17 @@
 .fui-icon {
-  width: 1.2em;
-  height: 1.2em;
+  width: 1.5em;
+  height: 1.5em;
   display: inline-block;
   fill: currentColor;
+}
+.icon-example{
+  main{
+    margin: 15px;
+    .fui-icon{
+      margin-right: 10px;
+      :last-child{
+        margin-right: 0;
+      }
+    }
+  }
 }
