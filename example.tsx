@@ -8,7 +8,7 @@ import LayoutExample from './lib/layout/layout.example'
 import {Layout, Aside, Header, Content, Footer} from './lib/layout/layout';
 import Icon from "./lib/icon/icon";
 import IconDemo from "./lib/icon/icon.demo";
-import ButtonDemo from "./lib/button.demo";
+import ButtonDemo from "./lib/button/button.demo";
 
 const x = require('!!raw-loader!./lib/icon/icon.example')
 console.log(x.default)

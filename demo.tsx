@@ -2,7 +2,7 @@ import * as React from 'react';
 import Highlight, {defaultProps} from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/github";
 import {useState} from 'react';
-import Button from "./lib/button";
+import Button from "./lib/button/button";
 import "./demo.scss"
 
 interface Props {

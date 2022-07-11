@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Demo from "../demo";
+import Demo from "../../demo";
 import ButtonExample1 from "./button.example1";
 import ButtonExample2 from "./button.example2";
 import ButtonExample3 from "./button.example3";
