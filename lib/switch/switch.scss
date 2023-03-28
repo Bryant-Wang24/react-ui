@@ -25,6 +25,10 @@ $h2: $h - 4px;
       left: calc(100% - #{$h2} - 2px);
     }
   }
+  &.fui-switch-disabled {
+    background: #e0e0e0;
+    cursor: not-allowed;
+  }
   &:focus {
     outline: none;
   }

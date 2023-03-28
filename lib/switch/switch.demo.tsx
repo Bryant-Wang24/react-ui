@@ -11,7 +11,7 @@ const SwitchDemo:React.FC = () => {
             <Demo code={require('!!raw-loader!./switch.example1.tsx').default}>
                 <section>
                     <h2>常规使用</h2>
-                    <main className='main'>
+                    <main className='main' style={{marginBottom:'10px',marginLeft:'10px'}}>
                         <SwitchExample1/>
                     </main>
                 </section>
@@ -19,7 +19,7 @@ const SwitchDemo:React.FC = () => {
             <Demo code={require('!!raw-loader!./switch.example2.tsx').default}>
                 <section>
                     <h2>支持disabled</h2>
-                    <main className='main'>
+                    <main className='main' style={{marginBottom:'10px',marginLeft:'10px'}}>
                         <SwitchExample2/>
                     </main>
                 </section>

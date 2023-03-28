@@ -15,7 +15,7 @@ const scopedClassMaker = (prefix: string) =>{
     return (name: string | ClassToggles, options?: Options) =>
       Object
         .entries(name instanceof Object ? name : {[name]: name})
-        .filter(kv => kv[1] !== false)
+        .filter(kv => kv[1] !== false && kv[1] !== undefined)
         .map(kv => kv[0])
         .map(name => [prefix, name]
           .filter(Boolean)
