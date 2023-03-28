@@ -20,7 +20,7 @@ $h2: $h - 4px;
     transition: all 250ms;
   }
   &.fui-switch-checked {
-    background: #1890ff;
+    background: #0ABC54;
     > span {
       left: calc(100% - #{$h2} - 2px);
     }
