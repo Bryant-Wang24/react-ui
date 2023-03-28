@@ -9,6 +9,7 @@ import IconDemo from "./lib/icon/icon.demo";
 import ButtonDemo from "./lib/button/button.demo";
 import DialogDemo from "./lib/dialog/dialog.demo";
 import SwitchExample from "./lib/switch/switch.demo";
+import SelectExample from "./lib/select/select.demo";
 
 const x = require('!!raw-loader!./lib/icon/icon.example')
 console.log(x.default)
@@ -41,6 +42,9 @@ ReactDOM.render(
             <li>
               <NavLink activeClassName="active" to="/switch">Switch 开关</NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="active" to="/select">Select 下拉框</NavLink>
+            </li>
           </ul>
         </Aside>
         <Content className='docContent'>
@@ -49,6 +53,7 @@ ReactDOM.render(
           <Route path="/dialog" component={DialogDemo}/>
           {/* <Route path="/layout" component={LayoutExample}/> */}
           <Route path="/switch" component={SwitchExample}/>
+          <Route path="/select" component={SelectExample}/>
         </Content>
       </Layout>
       <Footer className="docFooter">
