@@ -1,30 +1,20 @@
 Arguments: 
-  E:\Program File\nodejs\node.exe D:\node\node_global\node_modules\yarn\bin\yarn.js add types/react-router-dom@4.3.1
+  D:\download\nvm\node.exe D:\download\bin\yarn.js add styled-components@^5.3.6
 
 PATH: 
-  D:\software\cmder\vendor\git-for-windows\mingw64\bin;D:\software\cmder\vendor\git-for-windows\usr\bin;C:\Users\Administrator\bin;D:\课堂练习\react-ui\node_modules\.bin;%NVM_HOME%;%NVM_SYMLINK%;E:\Program File\nodejs;D:\Downloads\Microsoft VS Code;D:\node\node_global\node_modules;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Downloads\Microsoft VS Code\bin;D:\node\node_global;D:\software\cmder;D:\software\Trojan-Qt5-Windows.1.1.6\trojan-qt5.exe;E:\图片\Snipaste-2.5.4-Beta-x64\Snipaste;C;D:\Users\Administrator\AppData\Local\Yarn\Cache\v6\npm-tldr-3.3.5-1a08fe009ac0106080d0dfbdbafbfa953c86b3fe-integrity\node_modules\tldr;D:\software\cmder;D:\yarn\bin;E:\视频Pr素材;E:\mongodbData\bin;C:\Program Files\Git\cmd;E:\golang\bin;E:\mongodbData\bin;D:\python\Scripts;D:\python;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;C:\Users\Administrator\AppData\Local\Programs\Python\Python36;D:\yarn;E:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;E;D:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;E;D:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;%;ebStorm%;D:\Downloads\Microsoft VS Code\bin;D:\python_anacodna\_conda.exe;C:\Windows\system32;D:\node\node_global\node_modules\nodemon;E:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;E;D:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;E;D:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;E;D:\图片\Docker Toolbox;E:\图片\Docker Toolbox;C:\Users\Administrator\go\bin
+  D:\download\Git\mingw64\bin;D:\download\Git\usr\bin;C:\Users\wangqiushuang\bin;F:\vmware\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\download\bin;D:\download\Git\cmd;D:\download;D:\download\nvm;C:\Program Files\nodejs;D:\download\go\bin;F:\mongo\bin;C:\Users\wangqiushuang\go\pkg\mod\github.com\pilu\fresh@v0.0.0-20190826141211-0fa698148017\runner;F:\redis;C:\Program Files\Docker\Docker\resources\bin;C:\Users\wangqiushuang\AppData\Local\Microsoft\WindowsApps;C:\Users\wangqiushuang\AppData\Local\Yarn\bin;D:\download\Microsoft VS Code\bin;C:\Users\wangqiushuang\Downloads\cmder;C:\Users\wangqiushuang\AppData\Roaming\npm;D:\下载\WebStorm 2021.1.1\bin;D:\download\nvm;C:\Program Files\nodejs;C:\Users\wangqiushuang\go\bin;C:\Users\wangqiushuang\go\pkg\mod\github.com\pilu\fresh@v0.0.0-20190826141211-0fa698148017\runner;F:\MySQL\mysql-5.7.38-winx64\bin;F:\GoLand 2021.2.2\bin;F:\redis\Redis-x64-5.0.14.1
 
 Yarn version: 
-  1.22.11
+  1.22.5
 
 Node version: 
-  12.18.3
+  14.19.1
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://registry.npm.taobao.org/types%2freact-router-dom: Request "https://registry.npm.taobao.org/types%2freact-router-dom" returned a 405
-      at Request.params.callback [as _callback] (D:\node\node_global\node_modules\yarn\lib\cli.js:67001:18)
-      at Request.self.callback (D:\node\node_global\node_modules\yarn\lib\cli.js:140763:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (D:\node\node_global\node_modules\yarn\lib\cli.js:141735:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (D:\node\node_global\node_modules\yarn\lib\cli.js:141657:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1220:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: ENOENT: no such file or directory, lstat 'F:\react-ui\node_modules\webpack'
 
 npm manifest: 
   {
@@ -55,6 +45,7 @@ npm manifest:
       "@types/jest": "^27.0.3",
       "@types/react": "^17.0.38",
       "@types/react-dom": "^17.0.11",
+      "@types/react-router-dom": "4.3.1",
       "@types/react-test-renderer": "^17.0.1",
       "awesome-typescript-loader": "^5.2.1",
       "babel-jest": "^27.4.5",
@@ -64,6 +55,8 @@ npm manifest:
       "html-webpack-plugin": "^5.5.0",
       "jest": "^27.4.5",
       "node-sass": "^7.0.1",
+      "prism-react-renderer": "^1.3.5",
+      "raw-loader": "^4.0.2",
       "react-test-renderer": "^17.0.2",
       "sass-loader": "^12.4.0",
       "style-loader": "^3.3.1",
@@ -77,7 +70,8 @@ npm manifest:
     "dependencies": {
       "react": "^17.0.2",
       "react-dom": "^17.0.2",
-      "react-router-dom": "5.0.0"
+      "react-router-dom": "5.0.0",
+      "react-transition-group": "^4.4.5"
     }
   }
 
@@ -1845,6 +1839,13 @@ Lockfile:
     dependencies:
       regenerator-runtime "^0.13.4"
   
+  "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+    version "7.21.0"
+    resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
+    integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
+    dependencies:
+      regenerator-runtime "^0.13.11"
+  
   "@babel/runtime@^7.8.4":
     version "7.16.5"
     resolved "https://registry.npmmirror.com/@babel/runtime/download/@babel/runtime-7.16.5.tgz#7f3e34bf8bdbbadf03fbb7b1ea0d929569c9487a"
@@ -2284,6 +2285,11 @@ Lockfile:
     dependencies:
       "@types/node" "*"
   
+  "@types/history@*":
+    version "4.7.9"
+    resolved "https://registry.npmmirror.com/@types/history/download/@types/history-4.7.9.tgz?cache=0&sync_timestamp=1637265668226&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fhistory%2Fdownload%2F%40types%2Fhistory-4.7.9.tgz#1cfb6d60ef3822c589f18e70f8b12f9a28ce8724"
+    integrity sha1-HPttYO84IsWJ8Y5w+LEvmijOhyQ=
+  
   "@types/html-minifier-terser@^6.0.0":
     version "6.1.0"
     resolved "https://registry.npmmirror.com/@types/html-minifier-terser/download/@types/html-minifier-terser-6.1.0.tgz#4fc33a00c1d0c16987b1a20cf92d20614c55ac35"
@@ -2378,6 +2384,23 @@ Lockfile:
     resolved "https://registry.npmmirror.com/@types/react-dom/download/@types/react-dom-17.0.11.tgz?cache=0&sync_timestamp=1637269988464&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Freact-dom%2Fdownload%2F%40types%2Freact-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
     integrity sha1-4ercPF6GvbX3aE4AJ0riKOe8xGY=
     dependencies:
+      "@types/react" "*"
+  
+  "@types/react-router-dom@4.3.1":
+    version "4.3.1"
+    resolved "https://registry.npmmirror.com/@types/react-router-dom/download/@types/react-router-dom-4.3.1.tgz?cache=0&sync_timestamp=1637449508387&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Freact-router-dom%2Fdownload%2F%40types%2Freact-router-dom-4.3.1.tgz#71fe2918f8f60474a891520def40a63997dafe04"
+    integrity sha1-cf4pGPj2BHSokVIN70CmOZfa/gQ=
+    dependencies:
+      "@types/history" "*"
+      "@types/react" "*"
+      "@types/react-router" "*"
+  
+  "@types/react-router@*":
+    version "5.1.17"
+    resolved "https://registry.npmmirror.com/@types/react-router/download/@types/react-router-5.1.17.tgz#087091006213b11042f39570e5cd414863693968"
+    integrity sha1-CHCRAGITsRBC85Vw5c1BSGNpOWg=
+    dependencies:
+      "@types/history" "*"
       "@types/react" "*"
   
   "@types/react-test-renderer@^17.0.1":
@@ -3871,6 +3894,14 @@ Lockfile:
     integrity sha1-ZyGp2u4uKTaClVtq/kFncWJ7t2g=
     dependencies:
       utila "~0.4"
+  
+  dom-helpers@^5.0.1:
+    version "5.2.1"
+    resolved "https://registry.npmmirror.com/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
+    integrity sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==
+    dependencies:
+      "@babel/runtime" "^7.8.7"
+      csstype "^3.0.2"
   
   dom-serializer@0:
     version "0.2.2"
@@ -5929,6 +5960,15 @@ Lockfile:
       emojis-list "^3.0.0"
       json5 "^1.0.1"
   
+  loader-utils@^2.0.0:
+    version "2.0.2"
+    resolved "https://registry.npmmirror.com/loader-utils/-/loader-utils-2.0.2.tgz#d6e3b4fb81870721ae4e0868ab11dd638368c129"
+    integrity sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==
+    dependencies:
+      big.js "^5.2.2"
+      emojis-list "^3.0.0"
+      json5 "^2.1.2"
+  
   locate-path@^5.0.0:
     version "5.0.0"
     resolved "https://registry.nlark.com/locate-path/download/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
@@ -6901,6 +6941,11 @@ Lockfile:
       ansi-styles "^5.0.0"
       react-is "^17.0.1"
   
+  prism-react-renderer@^1.3.5:
+    version "1.3.5"
+    resolved "https://registry.npmmirror.com/prism-react-renderer/-/prism-react-renderer-1.3.5.tgz#786bb69aa6f73c32ba1ee813fbe17a0115435085"
+    integrity sha512-IJ+MSwBWKG+SM3b2SUfdrhC+gu01QkV2KmRQgREThBfSQRoufqRfxfHUxpG1WcaFjP+kojcFyO9Qqtpgt3qLCg==
+  
   process-nextick-args@~2.0.0:
     version "2.0.1"
     resolved "https://registry.npm.taobao.org/process-nextick-args/download/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -7016,6 +7061,14 @@ Lockfile:
       iconv-lite "0.4.24"
       unpipe "1.0.0"
   
+  raw-loader@^4.0.2:
+    version "4.0.2"
+    resolved "https://registry.npmmirror.com/raw-loader/-/raw-loader-4.0.2.tgz#1aac6b7d1ad1501e66efdac1522c73e59a584eb6"
+    integrity sha512-ZnScIV3ag9A4wPX/ZayxL/jZH+euYb6FcUinPcgiQW0+UBtEv0O6Q3lGd3cqJ+GHH+rksEv3Pj99oxJ3u3VIKA==
+    dependencies:
+      loader-utils "^2.0.0"
+      schema-utils "^3.0.0"
+  
   react-dom@^17.0.2:
     version "17.0.2"
     resolved "https://registry.npmmirror.com/react-dom/download/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -7081,6 +7134,16 @@ Lockfile:
       react-is "^17.0.2"
       react-shallow-renderer "^16.13.1"
       scheduler "^0.20.2"
+  
+  react-transition-group@^4.4.5:
+    version "4.4.5"
+    resolved "https://registry.npmmirror.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
+    integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==
+    dependencies:
+      "@babel/runtime" "^7.5.5"
+      dom-helpers "^5.0.1"
+      loose-envify "^1.4.0"
+      prop-types "^15.6.2"
   
   react@^17.0.2:
     version "17.0.2"
@@ -7164,6 +7227,11 @@ Lockfile:
     version "1.4.2"
     resolved "https://registry.nlark.com/regenerate/download/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
     integrity sha1-uTRtiCfo9aMve6KWN9OYtpAUhIo=
+  
+  regenerator-runtime@^0.13.11:
+    version "0.13.11"
+    resolved "https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+    integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
   
   regenerator-runtime@^0.13.4:
     version "0.13.9"
@@ -7413,7 +7481,7 @@ Lockfile:
       loose-envify "^1.1.0"
       object-assign "^4.1.1"
   
-  schema-utils@^3.1.0, schema-utils@^3.1.1:
+  schema-utils@^3.0.0, schema-utils@^3.1.0, schema-utils@^3.1.1:
     version "3.1.1"
     resolved "https://registry.npmmirror.com/schema-utils/download/schema-utils-3.1.1.tgz?cache=0&sync_timestamp=1637075997986&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fschema-utils%2Fdownload%2Fschema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
     integrity sha1-vHTEtraZXB2I92qLd76nIZ4MgoE=

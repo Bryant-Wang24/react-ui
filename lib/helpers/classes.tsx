@@ -8,7 +8,7 @@ interface Options{
 }
 
 interface ClassToggles {
-    [K:string]:boolean //ts的声明语法,意思是key为string类型，value为布尔值的 对象
+    [K:string]:boolean | undefined //ts的声明语法,意思是key为string类型，value为布尔值的 对象
 }
 const scopedClassMaker = (prefix: string) =>{
         //name = {hasAside:true,active:false,x:true,y:false}

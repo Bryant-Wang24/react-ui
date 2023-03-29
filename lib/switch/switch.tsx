@@ -12,18 +12,19 @@ interface SwitchProps {
 const scopedClass = scopedClassMaker('fui-switch');
 const sc = scopedClass;
 
-const Switch: React.FC<SwitchProps> = (props:any) => {
+const Switch: React.FC<SwitchProps> = (props:SwitchProps) => {
+    const { checked, disabled, onChange } = props
     return (
             <button
                 className={
                     sc({
                         '': true,
-                        'checked': props.checked,
-                        'disabled': props.disabled
+                        'checked': checked,
+                        'disabled': disabled,
                     }, {extra: props.className})     
                 }
                 disabled={props.disabled}
-                onClick={() => props.onChange(!props.checked)}
+                onClick={() =>onChange && onChange(!checked)}
             >
                 <span></span>
             </button>
