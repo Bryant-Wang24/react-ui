@@ -15,15 +15,17 @@ const SwitchExample1: React.FunctionComponent = () => {
     const handleError = () => {
         Toast.error('错误提示');
     }
+    const handleDestroy = () => {
+        Toast.destroy();
+    }
     return (
         <>
          <Button level='main' onClick={handleInfo}>正常提示</Button>
          <Button level='main' onClick={handleSuccess}>成功提示</Button>
          <Button level='main' onClick={handleWarning}>警告提示</Button>
          <Button level='main' onClick={handleError}>错误提示</Button>
+         <Button level='main' onClick={handleDestroy}>销毁提示</Button>
         </>
-           
-            
     );
 };
 
