@@ -3,9 +3,11 @@ import React from "react"
 import { scopedClassMaker } from "../helpers/classes"
 
 interface SwitchProps {
+    style?: React.CSSProperties
     className?: string
     checked?: boolean
     disabled?: boolean
+    size?: 'small' | 'default' | 'large'
     text?: {
         openText?: string
         closeText?: string
@@ -17,15 +19,18 @@ const scopedClass = scopedClassMaker('fui-switch');
 const sc = scopedClass;
 
 const Switch: React.FC<SwitchProps> = (props:SwitchProps) => {
-    const { checked, disabled, onChange,text } = props
+    const { checked, disabled, onChange,text,style } = props
     return (
             <button
+                style={style}
                 className={
                     sc({
                         '': true,
                         'checked': checked,
                         'disabled': disabled,
                         'text': Boolean(text && (text.openText || text.closeText)),
+                        'small': props.size === 'small',
+                        'large': props.size === 'large',
                     }, {extra: props.className})     
                 }
                 disabled={props.disabled}

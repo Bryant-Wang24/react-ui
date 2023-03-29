@@ -3,6 +3,7 @@ import SwitchExample1 from "./switch.example1"
 import React from "react"
 import SwitchExample2 from "./switch.example2"
 import SwitchExample3 from "./switch.example3"
+import SwitchExample4 from "./switch.example4"
 
 
 const SwitchDemo:React.FC = () => {
@@ -25,6 +26,14 @@ const SwitchDemo:React.FC = () => {
                     </main>
                 </section>
             </Demo>
+            <Demo code={require('!!raw-loader!./switch.example4.tsx').default}>
+                <section>
+                    <h2>支持size</h2>
+                    <main className='main' style={{marginBottom:'10px',marginLeft:'10px',display:'flex'}}>
+                        <SwitchExample4/>
+                    </main>
+                </section>
+            </Demo>
             <Demo code={require('!!raw-loader!./switch.example2.tsx').default}>
                 <section>
                     <h2>支持disabled</h2>
@@ -33,6 +42,7 @@ const SwitchDemo:React.FC = () => {
                     </main>
                 </section>
             </Demo>
+            
         </div>
     )
 }

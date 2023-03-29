@@ -8,7 +8,13 @@ $h2: $h - 4px;
   background: #bfbfbf;
   border-radius: $h/2;
   position: relative;
-    cursor: pointer;
+  cursor: pointer;
+  &.fui-switch-small {
+    transform: scale(0.8);
+  }
+  &.fui-switch-large {
+    transform: scale(1.2);
+  }
   > span {
     position: absolute;
     top: 2px;
