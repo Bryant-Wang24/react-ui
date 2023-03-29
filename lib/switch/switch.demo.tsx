@@ -2,6 +2,7 @@ import Demo from "../../demo"
 import SwitchExample1 from "./switch.example1"
 import React from "react"
 import SwitchExample2 from "./switch.example2"
+import SwitchExample3 from "./switch.example3"
 
 
 const SwitchDemo:React.FC = () => {
@@ -13,6 +14,14 @@ const SwitchDemo:React.FC = () => {
                     <h2>常规使用</h2>
                     <main className='main' style={{marginBottom:'10px',marginLeft:'10px'}}>
                         <SwitchExample1/>
+                    </main>
+                </section>
+            </Demo>
+            <Demo code={require('!!raw-loader!./switch.example3.tsx').default}>
+                <section>
+                    <h2>支持传入text</h2>
+                    <main className='main' style={{marginBottom:'10px',marginLeft:'10px'}}>
+                        <SwitchExample3/>
                     </main>
                 </section>
             </Demo>

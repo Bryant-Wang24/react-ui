@@ -19,14 +19,23 @@ $h2: $h - 4px;
     border-radius: $h2/2;
     transition: all 250ms;
   }
+  >label {
+    margin-left: 35%;
+    font-size: 12px;
+    color:white;
+    white-space: nowrap;
+  }
   &.fui-switch-checked {
     background: #0ABC54;
     > span {
       left: calc(100% - #{$h2} - 2px);
     }
+    >label {
+      margin-left: -35%;
+    }
   }
   &.fui-switch-disabled {
-    background: #e0e0e0;
+    opacity: 0.3;
     cursor: not-allowed;
   }
   &:focus {
